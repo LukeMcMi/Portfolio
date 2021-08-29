@@ -1,0 +1,138 @@
+:root {
+    --outer-space: rgb(28,1,24);
+    --backgroud: rgb(55,9,38);
+    --gin: rgb(107,212,37);
+    --heliotrope: rgb(107,212,37);
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
+    /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+    font-size: 1.75rem;
+    line-height: 1.5; 
+    color: var(--gin);
+    background-color: var(--outer-space);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.625rem;
+    color: var(--heliotrope);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  code {
+    /* Monospace font stack is used for our code blocks to make it look more like code */
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+      monospace;
+  }
+
+  main {
+    width: 96%;
+    margin: 2rem auto;
+  }
+  
+  footer {
+    margin: 1.5rem;
+    text-align: center;
+  }
+  
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--outer-space);
+    color: var(--gin);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--gin);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+/* flexbox created for about me section */
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;  
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;  
+}
