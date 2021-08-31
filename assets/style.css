@@ -36,36 +36,28 @@ body {
   
   h1 {
     /* 4rem = 40px (4 * 10px) */
-    font-size: 3rem;
+    font-size: 3rem; 
   }
   
   h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   
   h3 {
-    font-size: 3rem;
-  }
-  
-  h4 {
-    font-size: 2.5rem;
-  }
-  
-  h5 {
     font-size: 2rem;
   }
   
-  h6 {
+  h4 {
     font-size: 1.5rem;
   }
-
-  code {
-    /* Monospace font stack is used for our code blocks to make it look more like code */
-    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-      monospace;
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: .75rem;
   }
 
   main {
@@ -79,7 +71,7 @@ body {
   }
   
 .header {
-    padding: 20px;
+    padding: 4rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--outer-space);
     color: var(--gin);
@@ -98,6 +90,16 @@ body {
     font-size: 20px;
 }
 
+.header ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.header ul a:hover {
+  opacity:1;
+}
+
 .header nav ul {
     list-style-type: none;
 }
@@ -114,6 +116,11 @@ a {
 
 p {
     font-size: 16px;
+}
+
+img {
+    max-width: 50vw;
+    max-height: 50vh;
 }
 /* flexbox created for about me section */
 .aboutme {
@@ -136,3 +143,72 @@ p {
     margin-left: 1rem;
     margin-right: 1rem;  
 }
+
+.workapp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* footer style section */
+.footer-basic {
+    padding:40px 0;
+    background-color:var(--outer-space);
+    color:var(--gin);
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid var(--gin);
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:var(--outer-space);
+    margin-bottom:0;
+  }
