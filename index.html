@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/reset.css">
         <link rel="stylesheet" href="./assets/style.css">
+        <!-- stylesheet for social media links from http://fontawesome.io -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header id="home" class="header">
+        <header id="home" class="header-main">
             <h1>Luke McMillan</h1>
             <nav>
                 <ul>
@@ -23,38 +24,78 @@
                         <a href="#work">Work</a>
                     </li>
                     <li>
-                        <a href="#social-media-marketing">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="about" class="aboutme justify-center">
-                <div>
-                    <h1>
-                        Hi. I'm Luke. About Me.
-                    </h1>
+            <div id="about" class="about">
+                <section>
+                    <header><h2>Hi. I'm Luke.</h2></header>
+                    <header><h2>About Me.</h2></header>
                     <p>Working in the finance industry for the past two decades.</p>
                     <p>I have worked as a data and business analyst.</p>
                     <p>I am now pursuing my passion for technology and starting my journey developing.</p>
                     <img src="./images/AvatarMaker (1).png" alt="Luke Avatar"/>
-                </div>
-            </section>
-            <section id="work" class="work">
-                <h1>
-                    Work
-                </h1>   
-                <h2 class="workapp">CSS Cheat Sheet</h2>
-                <img src="./images/_Users_lukemcmillan_Bootcamp_Mini-Project-Week-2_index.html.png" alt="CSS Stylesheet"/>  
-            </section>
+                </section>
+            </div>
+            <div>
+                <header><h2>Work</h2></header>
+                <section id="work" class="work-container">
+                    <section class="work-card">
+                        <div><a href="1"></a>
+                        <header><h3>Place Holder Site</h3></header>
+                        <a href="https://en.m.wikipedia.org/wiki/Bill_Murray">
+                        <img src="http://www.fillmurray.com/g/200/300" alt="Bill Murray"/></a>
+                        </div>
+                    </section>
+                    <section class="work-card"> 
+                        <div><a href="2"></a>
+                        <header><h3>CSS Cheat Sheet</h3></header>
+                        <a href="https://lukemcmi.github.io/Mini-Project-Week-2/">
+                        <img src="./images/lukemcmi.github.io_Mini-Project-Week-2_.png" alt="CSS Stylesheet"/></a>
+                        </div>
+                    </section>
+                    <section class="work-card">
+                        <div><a href="3"></a>
+                        <header><h3>Update Accessability</h3></header>
+                        <a href="https://lukemcmi.github.io/Week-1-Homework/">
+                        <img src="./images/lukemcmi.github.io_Week-1-Homework_ (2).png" alt="Horiseon Webpage"/></a>
+                        </div>
+                    </section> 
+                </section>
+            </div>          
         </main>
+        <form id="contact" class="contact">
+            <h3>Get In Touch:</h3>
+            <p>
+              <label for="username">Name:</label>
+              <input class="text-input" id="username" type="text" placeholder="First Last" />
+            </p>
+            <p>
+              <label for="email">E-mail:</label>
+              <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+            </p>
+            <p>
+              <label for="comment">Comment:</label>
+              <textarea class="text-input" id="comment" placeholder="How can i help?"></textarea>
+            </p>
+            <p class="flex-row">
+              <input class="checkbox" id="agreement" type="checkbox" />
+              <label for="agreement">I agree to share my e-mail address with the developer</label>
+            </p>
+            <p>
+              <button>Submit</button>
+            </p>
+          </form> 
         <footer class="footer-basic">
             <div class="social"><a href="https://instagram.com"><i class="fa fa-instagram"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><a href="https://au.linkedin.com/"><i class="fa fa-linkedin"></i></a><a href="https://github.com/LukeMcMi"><i class="fa fa-github"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#home">Home</a></li>
                 <li class="list-inline-item"><a href="#about">About</a></li>
                 <li class="list-inline-item"><a href="#work">Work</a></li>
-                <li class="list-inline-item"><a href="#">Contact</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact</a></li>
             </ul>
             <p class="copyright">© Luke McMillan 2021</p>
         </footer>
