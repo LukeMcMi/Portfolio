@@ -12,7 +12,11 @@ Professional portfolio with information about me and recent projects I have work
 
 ## Link
 
-* [Portfolio] ()
+* [Portfolio](https://lukemcmi.github.io/Portfolio/#about)
+
+## Image
+
+![](./images/_Users_lukemcmillan_Bootcamp_Week-2-Homework-Portfolio_index.html.png)
 
 ## Authors
 

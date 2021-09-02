@@ -144,6 +144,7 @@ opacity:1;
   display: flex;
   flex: 100vw;
 }
+
 .work-container {
   display: flex;
   flex-direction: row wrap;
@@ -152,9 +153,6 @@ opacity:1;
   width: 100%;  
 }
 
-.active {
-  order: -1;
-}
 .work-card {
   flex: 0 0 33%;
   padding: 10px;
@@ -278,3 +276,4 @@ select:hover, button:hover {
     flex-direction: column;
     justify-content: space-evenly;
   }
+}
